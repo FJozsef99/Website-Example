@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arduino University Project</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <section class="header" id="myHeader">
+            <nav>
+                <a href="index.html"><img src="images/oe_nik_modern.png"></a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="components.html">COMPONENTS</a></li>
+                        <li><a href="diagram.html">CIRCUIT DIAGRAM</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+
+        <div class="item_container">
+            <div class="item">
+                <img src="images/esp.png">
+                <div class="item_desc">
+                    <h2>ESP mikrovezérlő</h2>
+                    <p>
+                        Az eszköz irányítását megvalósító eszköznek egy ESP32 mikrovezérlőt választottam, mivel erősebb és jobban elterjedtebb, mint más mikrovezérlők, rendelkezik WiFi kapcsolattal és megfelelő az ár-érték arány is.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/dcmotor.png">
+                <div class="item_desc">
+                    <h2>DC motor</h2>
+                    <p>
+                        A kerekek meghajtásához 4 darab különálló 12 voltos hobbi dc motor kerül felszerelésre, melyeknek a nyomatéka elegendőnek tűnik a jármű mozgatásához. A kerekek és a motorok összekötéséhez szükséges egy átalakító mivel a kerék és a motor tengelyek sajnos nem egyforma nagyságúak.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/motor.png">
+                <div class="item_desc">
+                    <h2>Motor vezérlő</h2>
+                    <p>
+                        A motorok vezérléséhez szükség van motorvezérlőkre, mivel a motorok teljesítménye nagy és a szükséges feszültség mennyiséget a mikrovezérlőn keresztül nem lehet továbbítani, illetve a vezérlést megvalósító rendszereket a motorvezérlőkben már implementálták. A megvalósításhoz 2 darab L298n típusú motorvezérlő lesz használva, mivel egy ilyen vezérlő két motort is tud irányítani, ami azért jó, mert itt szükséges lesz a motorok különálló vezérlése.
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="images/mecanums.png">
+                <div class="item_desc">
+                    <h2>Mecanum kerék</h2>
+                    <p>
+                        A mecanum kerekeken lévő hengerek 45 fokos szögben állnak a forgástengelyhez képest, egymás alatt. Az ilyen kerekekből épített rendszerek előnye, hogy egy tipikus négy kerekes, autó szerű felépítés mellett is képesek az oldal irányú mozgásra és még többre is, csupán a különböző kerekek, egymáshoz képest eltérő forgatásából kifolyólag.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

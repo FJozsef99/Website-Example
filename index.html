@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arduino University Project</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <section class="header" id="myHeader">
+            <nav>
+                <a href="index.html"><img src="images/oe_nik_modern.png"></a>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="components.html">COMPONENTS</a></li>
+                        <li><a href="diagram.html">CIRCUIT DIAGRAM</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+
+        <section class="description">
+            <div class="wrapper">
+                <img src="images/auto.png">
+
+                <div class="text-box">
+                    <h2>A projektről röviden</h2>
+                    <p>
+                        A projektmunka célja egy távirányítású minitank tervezése és kivitelezése, melynek mozgását és működését egy mikrokontroller által vezérelt rendszer oldja meg. Az eszköz felépítése alapvetően kettő részre bontható, melyek a jármű rész, ami a mozgásért és az alkatrészek stabil egyben tartásáért felelős, illetve a fegyverzet rész, ami célirányba állás után különböző alkatrészek segítségével lövedékeket tud kilőni, mindezt minél pontosabban és gond nélkül.
+                        <br><br>
+                        Az eszköz funkciói a következők: A mozgást illetően, képesnek kell lennie az alapvető irányokba mozogni, azaz előre, hátra és oldal irányok felé, szükséges ezek együttes elvégzése is, tehát az átló irányú mozgás is. Továbbá képesnek kell lennie a saját tengelye körüli forgásra, mindkét irányba.
+                        <br><br>
+                        A fegyverzet funkciói főként három célt szolgálnak. Az eszköznek egy kamera segítségével videó formájában tudnia kell közvetíteni a valós időben látott környezetet a felhasználó számára. Továbbá tartalmaz egy lézeres távolságmérőt melynek segítségével a rendszer a célpont távolságát meghatározni képes és ezáltal a lövedék kilövéséhez szükséges értékeket ki tudja számolni. Végül a pontosság érdekében a vízszintes tengelyhez képest el tud fordulni egy bizonyos szöggel, ezáltal változtatva a lövedék kilövési szögét.
+                        <br><br>
+                        Ehhez az eszközhöz hasonló, de funkcióiban sokkal korlátozottabb, korábban már megépítésre került projekteket alapul véve kerül kidolgozásra a saját munkám. Más projektekben főleg csak a mozgásos részt szokás implementálni egy távirányítású autó formájában, de a fegyverzet részt nem. Ahol mégis szerepel ez a fajta működés, ott leginkább a rendszer nem képes mozogni, csak egy helyben áll, vagy akár rögzített.
+                        <br><br>
+                        A munkám célja ezeknek a funkcióknak az egyesítése és kivitelezése, ezáltal egy új és érdekes eszköz létrehozása.
+                    </p>
+                </div>
+            </div>
+            <div class="wrapper2">
+                <img src="images/turret.PNG">
+
+                <div class="text-box2">
+                    <h2>Jövőbeli tervek</h2>
+                    <p>
+                        A jármű testen helyezkedik el a fegyverzet. A lövedékek kilövéséhez egy Nerf gunra hasonlító szerkezet lesz készítve. A lövedékek hosszúkás szivacs hengerek lesznek, melyek végén egy kemény műanyag fej található mely biztosítja a stabil röppályát. A lövedékmennyiség csak méreti és tömegi kérdés mivel a tár, a szerkezet tetején lesz így elméletben bármennyi elférhet benne, de optimálisan maximum 6-10 darabnak lesz hely. A kilövést egy szervómotor fogja irányítani mely mindig a legalsó lövedéket fogja előre tolni két forgó henger közé, melyek által a lövedék nagy sebességgel indul útjára, akár 3-5 méteres távolságot is megtéve.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    background-image: linear-gradient(rgba(4,9,30,0.9), rgba(4,9,30,0.8)), url(images/bgpic.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.header{
+    width: 100%;
+    height: 10%;
+    position: fixed;
+    background-color: rgba(4, 9, 30, 0.973);
+    margin-bottom: 50px;
+}
+
+nav{
+    display: flex;
+    padding: 2vh 3%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    width: 100px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #19D816;
+    display: block;
+    margin: auto;
+    transition: 0.05s;
+}
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.description{
+    padding: 5%;
+}
+
+.wrapper{
+    margin-top: 5%; /*auto*/
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    justify-content: center;
+    align-content: center;
+}
+
+.wrapper img {
+    margin: 4px;
+    max-width: 360px;
+    width: 100%;
+    height: 100%;
+    float: right;
+    margin-bottom: 0px;
+}
+.text-box{
+    color: #fff;
+    text-align: justify;
+}
+
+.wrapper2{
+    width: 70%;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrapper2 img {
+    margin: 4px;
+    max-width: 320px;
+    float: left;
+}
+
+.text-box2{
+    color: #fff;
+    text-align: justify;
+}
+
+.description h2{
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.item_container{
+    padding: 5%;
+}
+
+.item{
+    margin-top: 5%; /*auto*/
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    justify-content: center;
+    display: flex;
+    align-content: center;
+}
+
+@media(max-width: 700px){
+    .item{
+        flex-direction: column;
+    }
+}
+
+.item img{
+    margin: 5px;
+    max-width: 320px;
+    object-fit: contain;
+    float: left;
+}
+.item_desc{
+    color: #fff;
+    text-align: left;
+}
+
+.diagram{
+    padding: 5%;
+}
+.diagram .circ{
+    margin-top: 2%;
+}
+.diagram h2{
+    margin-top: 5%;
+    color: #fff;
+    text-align: center;
+}
+.diagram .circ{
+    text-align: center;
+    display: grid;
+    height: 100%;
+}
+.diagram .circ img{
+    max-width: 100%;
+    max-height: 70vh;
+    margin: auto;
+}
